@@ -1,0 +1,195 @@
+
+.Home_footer_section{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: black;
+    padding-top: 1rem;
+    color: white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+
+.Home_footer_section .footer_mainContent{
+    display: flex;
+    align-items: start;
+    justify-content:start;
+    gap: 3rem;
+    padding-bottom: 2rem;
+}
+.other_info_contaner{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.Home_footer_section .Home_footer_info{
+    width:35%;
+    text-align: start;
+}
+.Home_footer_section .Home_footer_info p{
+    font-size: 0.7rem;  
+    font-weight: 400;
+    color: rgb(163, 163, 163);
+    margin-top: 0;
+}
+
+.Home_footer_section .Home_Footer_logo_container{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+
+.Home_footer_section .Home_Footer_logo_container img{
+    width: 7rem;
+    height:auto;
+    margin-bottom: 1rem;
+}
+.Home_footer_section .Home_Footer_logo_container h1{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+.Home_footer_section h2{
+    font-size: 0.9rem;
+    background: rgb(255, 191, 52);
+    background: radial-gradient(circle, rgb(255, 183, 27) 0%, rgba(225,133,47,1) 29%, rgb(255, 189, 23) 49%, rgba(223,142,56,1) 58%, rgba(255,237,73,1) 100%);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom:0.6rem;
+}
+
+.footer_marketpace p{
+    font-size: 0.7rem;  
+    font-weight: 400;
+    color: rgb(163, 163, 163);  
+    margin-bottom: 0.3rem;
+    padding-bottom: 0;
+}
+
+.footer_Company p{
+    font-size: 0.7rem;  
+    font-weight: 400;
+    color: rgb(163, 163, 163);  
+    margin-bottom: 0.3rem;
+    padding-bottom: 0;
+}
+.footer_Company h2{
+    font-size: 0.9rem;
+}
+
+.footer_Services p{
+    font-size: 0.7rem;  
+    font-weight: 400;
+    color: rgb(163, 163, 163);  
+    margin-bottom: 0.3rem;
+    padding-bottom: 0;
+}
+
+
+.Home_footer_section .footer_rights{
+width: 100%;
+margin-top: 1rem;
+font-size: 0.8rem;  
+font-weight: 400;
+color: rgb(163, 163, 163);
+display: flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.Home_footer_section .terms_plicy{
+    display: flex;
+}
+.Home_footer_section .footer_rights p{
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}  
+
+.Home_footer_section hr{
+    border-color: gold;
+}
+
+
+
+
+@media (max-width: 516px){
+    .Home_footer_section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .Home_footer_section .footer_mainContent{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .other_info_contaner{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .Home_footer_section .Home_footer_info{
+        width: 100%;
+        text-align: start;
+        padding-left: 1rem;
+        box-sizing: border-box;
+    }
+
+    .Home_footer_section .Home_footer_info p{
+        width:100%;
+    }
+
+    .Home_footer_section .footer_siteMap{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100vw;
+        padding-left: 1rem;
+        box-sizing: border-box;
+        padding-bottom: 1rem;
+    }
+
+    .Home_footer_section .siteMap_tabs{
+        display: grid;
+        column-gap: 0.5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 0;
+    }
+
+    .Home_footer_section .footer_Company{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        align-items: start  ;
+        padding-left: 1rem;
+        box-sizing: border-box;
+
+    }
+
+    .footer_social{
+        display: flex;
+        flex-direction: column;
+        align-items: start;   
+        gap: 1rem;
+        padding-left: 1rem;
+        box-sizing: border-box;
+    }
+    .footer_social .socials_container{
+        display:flex;
+        flex-direction: row;
+        justify-content: start;
+       
+    }
+
+    .Home_footer_section .footer_rights{
+        font-size: 0.5rem;  
+        font-weight: 300;
+    }
+}

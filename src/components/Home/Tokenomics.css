@@ -1,0 +1,132 @@
+
+.tokenomic_section_container{
+    background-image: url(../../Assets/image/Background_image1.svg);
+    background-repeat: repeat;
+    background-color:#000000;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+
+    gap: 1rem;
+    width: 100vw;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+}
+
+.tokenomic_section_container .Tokenomic_Heading{
+    font-size: 2.5rem;
+    width: fit-content;
+    background: rgb(255, 191, 52);
+    background: radial-gradient(circle, rgb(255, 183, 27) 0%, rgba(225,133,47,1) 29%, rgb(255, 189, 23) 49%, rgba(223,142,56,1) 58%, rgba(255,237,73,1) 100%);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tokenomic_section_container .Tokenomic_info {
+    font-weight: 450;
+    font-size: 1rem;
+    width:70%;
+    text-align: center;
+}
+
+.tokenomic_section_container img{
+    margin: 2rem;
+    width: 50%;
+        animation-name: tokenomic_rotate;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-direction:alternate-reverse;
+        animation-iteration-count: infinite;
+}
+
+@keyframes tokenomic_rotate {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 20deg;
+    }
+}
+
+.tokenomic_section_container .tokenomic_box_container{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.tokenomic_box_container .tokenomic_box{
+    display: flex;
+    justify-content: space-between;
+    padding:1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    width: 24rem;
+
+    background-color: #FCC14B;
+    color: white;
+    border:1px solid rgba(255, 255, 255, 0.365);
+    border-bottom: none;
+    background-color: #000000;
+    background-image: linear-gradient(0deg, #000000ab 6%, #ffb236b2 94%);
+}
+
+
+.clip{
+    width: 100vw;
+    height: 5rem;
+    position: absolute;
+    clip-path: polygon(51% 0, 100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    top: 98%;
+}
+
+
+
+/* tab responsive */
+
+@media (max-width:840px){
+    
+.tokenomic_section_container{
+    padding-top: 3rem;
+}
+
+.tokenomic_section_container .Tokenomic_info {
+    width:80%;
+}
+
+.tokenomic_box_container .tokenomic_box{
+    font-size: 1.3rem;
+    width: 20rem;
+}
+}
+
+
+
+/* mobile responsive */
+
+
+@media (max-width:516px){
+
+    .tokenomic_section_container{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .tokenomic_box_container .tokenomic_box{
+        font-size: 1.1rem;
+        width: 20rem;
+    }
+}

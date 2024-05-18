@@ -1,0 +1,317 @@
+.Presale_Section_container{
+    background-image: url(../../Assets/image/Background_image1.svg);
+    background-repeat: repeat;
+    background-color:#000000ed;
+    display: flex;
+    justify-content: space-evenly;
+    color:rgb(255, 255, 255);
+    align-items:start;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    width: 100vw;
+    
+    clip-path: polygon(0 0, 100% 0%, 100% 94%, 50% 100%, 0 94%);
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+}
+
+.Presale_Section_container .presale_info_container{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: start;
+gap: 2rem;
+margin-top: 2rem;
+}
+
+.presale_info_container h1{
+    font-size: 2.5rem;
+    line-height: 1;
+    width: fit-content;
+    background: rgb(255, 191, 52);
+    background: radial-gradient(circle, rgb(255, 183, 27) 0%, rgba(225,133,47,1) 29%, rgb(255, 189, 23) 49%, rgba(223,142,56,1) 58%, rgba(255,237,73,1) 100%);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.presale_info_container h2{
+    font-size: 1.5rem;
+}
+
+.presale_info_container p{
+    width: 90%;
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.presale_info_container img{
+    width: 90%;
+    height: auto;
+}
+
+
+
+
+
+.Presale_Section_container .presale_buy_container{
+    width: 45%;
+    margin-top: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.presale_buy_container .background_img{
+    width: 70%;
+    height:auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: blur(3px);
+    opacity: 0.3;
+}
+
+.presale_buy_container .main_box_contaner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    gap: 1.5rem;
+    border: solid 4px rgb(255, 149, 0);
+    background-image: linear-gradient(43deg, #3f3010d2 2%, #513110d2 55%, #231f00d2 90%);
+    box-shadow: 0 0 20px 10px rgba(255, 208, 0, 0.376);
+}
+
+
+.main_box_contaner h1{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    line-height: 1;
+    width: fit-content;
+    background: rgb(255, 191, 52);
+    background: radial-gradient(circle, rgb(255, 183, 27) 0%, rgba(225,133,47,1) 29%, rgb(255, 189, 23) 49%, rgba(223,142,56,1) 58%, rgba(255,237,73,1) 100%);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main_box_contaner button,.Approve_btn{
+    padding: 0.4rem;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    width: fit-content;
+    font-weight: 600;
+    font-family: mont;
+    border-radius: 0.3rem;
+    color: white;
+    background: rgb(255,200,78);
+    background: linear-gradient(90deg, rgba(255,200,78,1) 2%, rgba(225,133,47,1) 55%, rgba(255,237,73,1) 100%);
+}
+
+
+.main_box_contaner .price_comparison{
+    display: flex;
+    gap: 2rem;
+    font-weight: 600;
+}
+
+
+.main_box_contaner .buy_with_container{
+    text-align:center;
+    width: 100%;
+}
+
+.buy_with_container .buy_options{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+}
+
+.buy_with_container p{
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.buy_options img{
+    width: 7rem;
+}
+
+
+.main_box_contaner .input_1{
+    width: 95%;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: end;
+    background-color: white;
+    color: rgb(54, 54, 54);
+    font-size: 0.7rem;
+    font-weight:900;
+}
+
+.input_1 img{
+    width: 2rem;
+}
+.main_box_contaner .input_2_container{
+    width: 95%;
+    text-align: start;
+}
+
+.input_2_container .input_2_heading{
+    font-weight: 500;
+margin-bottom: 0.2rem;
+}
+
+.input_2_container .input_2{
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: end;
+    background-color: white;
+    color: rgb(54, 54, 54);
+    font-size: 0.7rem;
+    font-weight:900;
+}
+
+.input_2 img {
+    width: 2rem;
+}
+
+
+
+/*  tab responsive */
+
+
+@media (max-width:840px){
+    .buy_options img{
+        width: 5rem;
+    }
+
+    .main_box_contaner h1{
+        font-size: 2rem;
+        margin-top: 0rem;
+    }
+    .main_box_contaner .price_comparison{
+        gap:0.5rem;
+        font-weight: 500;
+    }
+    
+}
+
+
+
+
+
+
+/* mobile responsive */
+
+
+@media (max-width:516px){
+
+    .Presale_Section_container{
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+        clip-path: polygon(0 0, 100% 0%, 100% 98%, 50% 100%, 0 98%);
+    }
+    
+    p{
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .Presale_Section_container .presale_info_container{
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    }
+
+    .presale_info_container h1{
+        line-height: 0.9;
+    }
+    
+    .presale_info_container p{
+        width: 100%;
+        text-align: center;
+        font-weight: 100;
+        font-size: 0.8rem;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+
+    .presale_info_container h2{
+        align-self: center;
+    }
+    
+    .presale_info_container img{
+        width: 90%;
+        height: auto;
+        align-self: center;
+    }
+    
+    
+    
+    
+    
+    .Presale_Section_container .presale_buy_container{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    
+    .presale_buy_container .main_box_contaner{
+        padding: 1rem;
+        box-sizing: border-box;
+        gap: 1.5rem;
+    }
+    
+    
+    .main_box_contaner h1{
+        font-size: 2rem;
+        width: fit-content;
+    }
+    
+    .main_box_contaner button,.Approve_btn{
+        padding: 0.4rem;
+        padding: 0.4rem 1rem 0.4rem 1rem;
+        margin-bottom: 1rem;
+      }
+    
+    
+    .main_box_contaner .price_comparison{
+        gap: 1rem;
+    }
+    
+    
+    .main_box_contaner .buy_with_container{
+        text-align:center;
+    }
+    
+    .buy_with_container .buy_options{
+        gap: 0.1rem;
+    }
+    
+    .buy_options img{
+        width: 5.5rem;
+    }
+
+}
