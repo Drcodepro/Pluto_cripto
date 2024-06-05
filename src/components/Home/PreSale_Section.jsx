@@ -14,7 +14,7 @@ export default function PreSale(){
     return(
         <div className="Presale_Section_container">
             <div className="presale_info_container">
-                <h1>Presale  Is Live !</h1>
+                <h1>Presale Is Live !</h1>
                 <h2>Hurry Up 😀</h2>
                 <p>Pluto Token's presale offers a unique opportunity to invest in the future of decentralized finance. With its innovative approach and strong community backing, Pluto aims to redefine the landscape of digital assets.</p>
                 <img src={offerPoster} alt="" />

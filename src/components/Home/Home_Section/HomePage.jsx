@@ -18,6 +18,6 @@ export default function HomePage(){
        <RoadMap/>
        <Tokenomics/>
        <BuyPluto/>
-       <Footer/>
+       {/* <Footer/> */}
     </>)
 }

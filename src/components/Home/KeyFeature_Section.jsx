@@ -14,7 +14,7 @@ export default function KeyFeatureSection(){
         
         <div className="keyFeature_box_container" >
             <div className="keyFeature_box" id="box1">
-               
+               <h1>Efficient and Secure Transactions</h1>
                 <div className="boxinfo">
                     <p>PLUTC ensures swift transactions, cutting costs, and minimizing risks. Its secure payment methods build trust between users and merchants, safeguarding against fraud and ensuring seamless transactions with confidence and reliability.</p>
                     <img src={boxImg1} alt="" id="box_img1" />

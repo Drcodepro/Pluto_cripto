@@ -72,7 +72,7 @@ p{
     padding:1.5rem;
     font-size: 1.5rem;
     font-weight: 700;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     width: 24rem;
 
     background-color: #FCC14B;
@@ -80,7 +80,7 @@ p{
     border:1px solid rgba(255, 255, 255, 0.365);
     border-bottom: none;
     background-color: #000000;
-    background-image: linear-gradient(0deg, #000000ab 6%, #ffb236b2 94%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(252,193,75,1) 100%);
 }
 
 

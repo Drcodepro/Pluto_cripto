@@ -50,22 +50,27 @@ li{
 .RoadMap_section_container .RoadMap_Points_container{
     display: flex;
     flex-direction: column;
-    width:fit-content;
+    align-items: center;
+    width:100%;
     margin-top: 3rem;
     gap: 3rem;
 }
 
 .RoadMap_Points_container .RoadMap_points{
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    align-items:start;
     gap:4rem;
-    align-items:end;
-    width: 100%;
+    width:90%;
 }
 
 .RoadMap_points .point_head{
-    width:50%;
-    }
+   display: flex;
+   flex-direction: column;
+   justify-content:space-evenly;
+   align-items: center;
+    width:45%;
+}
 
 .RoadMap_points .point_head h1{
     font-size: 3rem;
@@ -76,13 +81,16 @@ li{
 }
 
 
-.RoadMap_points .point_head h2{
+.RoadMap_points .point_head div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: 600;
     width:100%;
+    height: 4rem;
     line-height: 1;
     text-align: center;
-    background-color:chocolate;
     padding:0.5rem 0.5rem 0.5rem 2rem;
     box-sizing: border-box;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10% 50%);
@@ -90,15 +98,35 @@ li{
 }
 
 .RoadMap_points ul{
-    list-style: circle;
+    align-self:flex-start;
     color: rgb(255, 255, 255);
-    width: 50%;
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .RoadMap_points li{
     width:100%;
     text-align: start;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
 }
+
+
+
+
+.RoadMap_Points_container .RoadMap_points:nth-child(even) .point_head div {
+    background-color: #E18F43; 
+  }
+  
+  .RoadMap_Points_container .RoadMap_points:nth-child(odd) .point_head div {
+    background-color: #F1B33A
+    ;
+  }
+
+
+
 
 
 
@@ -141,25 +169,40 @@ li{
    width: 50%;
 }
 
-.RoadMap_points .point_head h2{
+.RoadMap_points .point_head  div{
     font-size: 1.5rem;
-    width:100%;
-    text-align: start;
+    text-align: center;
 }
 
 .RoadMap_points ul{
-    list-style: circle;
     color: rgb(255, 255, 255);
     width: 50%  ;
 }
+
+.RoadMap_points li{
+    width:100%;
+    font-size: 0.9rem;
 }
+
+
+}
+
+
+
+@media (max-width:670px){
+    
+    .RoadMap_points .point_head div{
+        font-size: 1.2rem;
+    }
+}
+
 
 
 
 /* mobile responsive */
 
 
-@media (max-width:516px){
+@media (max-width:550px){
     
     .RoadMap_section_container{
         padding-left: 1rem;
@@ -196,11 +239,12 @@ li{
         font-size: 2rem;
      }
      
-     .RoadMap_points .point_head h2{
-         font-size: 1rem;
+     .RoadMap_points .point_head div{
+         font-size: 1.2rem;
+         height: 3rem;
          width:100%;
          text-align:center;
-         padding:0.5rem 0.5rem 0.5rem 4rem;
+         padding:0.5rem 0.5rem 0.5rem 2rem;
      }
 
      .RoadMap_points ul{
@@ -210,7 +254,7 @@ li{
      }
      .RoadMap_points li{
         width:100%;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
      }

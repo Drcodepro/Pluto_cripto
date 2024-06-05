@@ -95,15 +95,26 @@ gap: 3rem;
 
 
 .vision_mission_container .vision_mission_info{
-display: flex;
+/* display: flex;
 justify-content: space-between;
+gap: 3rem; */
+
+display: grid;
+grid-template-columns: repeat(3, 1fr); 
+gap: 3.5rem; 
 }
 
 .vision_mission_info .vision_mission_box{
     
-    width:25%;
+    width:100%;
     border-top: 6px solid #4d4d4d;
     padding-top: 1rem;
+    
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-template-columns: 1fr;
+    grid-row: 1/4;
+    row-gap: 0rem;
 }
 
 .vision_mission_info .vision_mission_box img{
@@ -176,7 +187,7 @@ justify-content: space-between;
 /* mobile responsive */
 
 
-@media (max-width: 516px ) {
+@media (max-width: 700px ) {
 
     .about_secton_container{
         padding-left: 1rem;
