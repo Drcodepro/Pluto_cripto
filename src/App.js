@@ -5,6 +5,7 @@ function App() {
   return (<div id='app_container'>
    <NavBar/>
    <HomePage/>
+   
   </div>
   );
 }
